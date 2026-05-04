@@ -1,0 +1,76 @@
+{
+    "title": "Input schema of the Dropshipping Niche Finder Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "AliExpress trending categories and product URLs to analyze.",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://www.aliexpress.com/categories/home-garden/products.html"
+                },
+                {
+                    "url": "https://www.aliexpress.com/categories/electronics/products.html"
+                }
+            ]
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Requests per Crawl",
+            "type": "integer",
+            "description": "Maximum number of products to analyze.",
+            "default": 200
+        },
+        "trendingKeywords": {
+            "title": "Trending Keywords to Monitor",
+            "type": "array",
+            "description": "Keywords to track for dropshipping opportunities.",
+            "prefill": ["smart home", "fidget toys", "phone accessories", "pet supplies", "fitness trackers"]
+        },
+        "minSearchVolume": {
+            "title": "Minimum Search Volume",
+            "type": "integer",
+            "description": "Only analyze products with search volume above this threshold.",
+            "default": 1000
+        },
+        "maxCompetition": {
+            "title": "Maximum Competition Level",
+            "type": "string",
+            "description": "Filter by competition level (low, medium, high).",
+            "default": "medium",
+            "enum": ["low", "medium", "high"]
+        },
+        "minSellerRating": {
+            "title": "Minimum Seller Rating",
+            "type": "number",
+            "description": "Only include products from sellers with rating above this value.",
+            "default": 4.0
+        },
+        "priceRange": {
+            "title": "Price Range (Min - Max USD)",
+            "type": "array",
+            "description": "Filter products by wholesale price range.",
+            "prefill": [5, 50]
+        },
+        "minMonthlyOrders": {
+            "title": "Minimum Monthly Orders",
+            "type": "integer",
+            "description": "Minimum monthly orders on AliExpress to consider.",
+            "default": 100
+        },
+        "marginTarget": {
+            "title": "Target Profit Margin (%)",
+            "type": "integer",
+            "description": "Target profit margin percentage for viable niches.",
+            "default": 200
+        },
+        "enableNicheScore": {
+            "title": "Calculate Niche Score",
+            "type": "boolean",
+            "description": "Calculate opportunity score for each product.",
+            "default": true
+        }
+    }
+}

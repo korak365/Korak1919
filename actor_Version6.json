@@ -1,0 +1,17 @@
+{
+    "actorSpecification": 1,
+    "name": "dropshipping-niche-finder-scraper",
+    "title": "Dropshipping Niche Finder Scraper",
+    "description": "Cross-references AliExpress trends with Google Search volume.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "ai-generated-actor",
+        "generatedBy": "Claude"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile"
+}

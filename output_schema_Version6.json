@@ -1,0 +1,26 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of the Dropshipping Niche Finder Scraper",
+    "properties": {
+        "overview": {
+            "type": "string",
+            "title": "Overview",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        },
+        "nicheFinder": {
+            "type": "string",
+            "title": "Niche Opportunities",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=nicheFinder"
+        },
+        "competitionAnalysis": {
+            "type": "string",
+            "title": "Competition Analysis",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=competitionAnalysis"
+        },
+        "profitabilityMetrics": {
+            "type": "string",
+            "title": "Profitability Metrics",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=profitabilityMetrics"
+        }
+    }
+}

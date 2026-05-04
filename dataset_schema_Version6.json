@@ -1,0 +1,178 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": ["productName", "keyword", "searchVolume", "monthlyOrders", "wholesalePrice", "recommendedRetailPrice", "profitMargin", "nicheScore"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "keyword": {
+                        "label": "Keyword",
+                        "format": "text"
+                    },
+                    "searchVolume": {
+                        "label": "Monthly Search Volume",
+                        "format": "number"
+                    },
+                    "monthlyOrders": {
+                        "label": "Monthly Orders (AliExpress)",
+                        "format": "number"
+                    },
+                    "wholesalePrice": {
+                        "label": "Wholesale Price",
+                        "format": "text"
+                    },
+                    "recommendedRetailPrice": {
+                        "label": "Recommended Retail Price",
+                        "format": "text"
+                    },
+                    "profitMargin": {
+                        "label": "Profit Margin %",
+                        "format": "number"
+                    },
+                    "nicheScore": {
+                        "label": "Niche Score (0-100)",
+                        "format": "number"
+                    }
+                }
+            }
+        },
+        "nicheFinder": {
+            "title": "Niche Opportunities",
+            "transformation": {
+                "fields": ["productName", "keyword", "category", "searchVolume", "competition", "monthlyOrders", "profitPotential", "sellerRating", "productUrl", "viability"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "keyword": {
+                        "label": "Keyword",
+                        "format": "text"
+                    },
+                    "category": {
+                        "label": "Category",
+                        "format": "text"
+                    },
+                    "searchVolume": {
+                        "label": "Search Volume",
+                        "format": "number"
+                    },
+                    "competition": {
+                        "label": "Competition",
+                        "format": "text"
+                    },
+                    "monthlyOrders": {
+                        "label": "Monthly Orders",
+                        "format": "number"
+                    },
+                    "profitPotential": {
+                        "label": "Profit Potential",
+                        "format": "text"
+                    },
+                    "sellerRating": {
+                        "label": "Seller Rating",
+                        "format": "number"
+                    },
+                    "productUrl": {
+                        "label": "Product URL",
+                        "format": "link"
+                    },
+                    "viability": {
+                        "label": "Viability",
+                        "format": "text"
+                    }
+                }
+            }
+        },
+        "competitionAnalysis": {
+            "title": "Competition Analysis",
+            "transformation": {
+                "fields": ["keyword", "searchVolume", "competitionLevel", "topSellers", "averageRating", "priceRange", "trendDirection"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "keyword": {
+                        "label": "Keyword",
+                        "format": "text"
+                    },
+                    "searchVolume": {
+                        "label": "Search Volume",
+                        "format": "number"
+                    },
+                    "competitionLevel": {
+                        "label": "Competition Level",
+                        "format": "text"
+                    },
+                    "topSellers": {
+                        "label": "Top Sellers Count",
+                        "format": "number"
+                    },
+                    "averageRating": {
+                        "label": "Average Rating",
+                        "format": "number"
+                    },
+                    "priceRange": {
+                        "label": "Price Range",
+                        "format": "text"
+                    },
+                    "trendDirection": {
+                        "label": "Trend Direction",
+                        "format": "text"
+                    }
+                }
+            }
+        },
+        "profitabilityMetrics": {
+            "title": "Profitability Metrics",
+            "transformation": {
+                "fields": ["productName", "wholesalePrice", "recommendedRetailPrice", "potentialProfit", "profitMargin", "roi", "breakEvenPoint"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "wholesalePrice": {
+                        "label": "Wholesale Price",
+                        "format": "text"
+                    },
+                    "recommendedRetailPrice": {
+                        "label": "Recommended Retail",
+                        "format": "text"
+                    },
+                    "potentialProfit": {
+                        "label": "Profit Per Unit",
+                        "format": "text"
+                    },
+                    "profitMargin": {
+                        "label": "Margin %",
+                        "format": "number"
+                    },
+                    "roi": {
+                        "label": "ROI %",
+                        "format": "number"
+                    },
+                    "breakEvenPoint": {
+                        "label": "Break-Even Units",
+                        "format": "number"
+                    }
+                }
+            }
+        }
+    }
+}
